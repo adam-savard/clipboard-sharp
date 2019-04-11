@@ -7,7 +7,7 @@
     <ProjectGuid>{31AE7179-9CE4-48A9-889E-631B7109C362}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Clipboard_Sharp</RootNamespace>
-    <AssemblyName>Clipboard_Sharp</AssemblyName>
+    <AssemblyName>Clipboard#</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_copy_64_3hi_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -80,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_copy_64_3hi_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

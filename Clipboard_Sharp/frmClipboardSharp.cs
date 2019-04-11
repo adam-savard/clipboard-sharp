@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -101,6 +102,12 @@ namespace Clipboard_Sharp
 			}
 
 			
+		}
+
+		private void showToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ClipboardSharp");
+			Process.Start(path);
 		}
 	}
 }
