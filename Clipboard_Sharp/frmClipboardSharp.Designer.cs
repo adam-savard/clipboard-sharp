@@ -57,6 +57,7 @@
 			this.showToolStripMenuItem.Name = "showToolStripMenuItem";
 			this.showToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
 			this.showToolStripMenuItem.Text = "Open Saved Clips";
+			this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
 			// 
 			// saveToggle
 			// 

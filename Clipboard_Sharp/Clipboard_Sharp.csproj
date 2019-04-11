@@ -7,7 +7,11 @@
     <ProjectGuid>{31AE7179-9CE4-48A9-889E-631B7109C362}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Clipboard_Sharp</RootNamespace>
+<<<<<<< HEAD
     <AssemblyName>ClipboardSharp</AssemblyName>
+=======
+    <AssemblyName>Clipboard#</AssemblyName>
+>>>>>>> Added support for opening save folder.
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +56,7 @@
   <PropertyGroup>
     <ApplicationIcon>icons8_copy_64_3hi_icon.ico</ApplicationIcon>
   </PropertyGroup>
+<<<<<<< HEAD
   <PropertyGroup>
     <ManifestCertificateThumbprint>6F2810EE5AD46F2EAC6BAA0A3310D18A4254FC22</ManifestCertificateThumbprint>
   </PropertyGroup>
@@ -64,6 +69,8 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+=======
+>>>>>>> Added support for opening save folder.
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -117,6 +124,7 @@
   <ItemGroup>
     <Content Include="icons8_copy_64_3hi_icon.ico" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
@@ -129,5 +137,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+=======
+>>>>>>> Added support for opening save folder.
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
