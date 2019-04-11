@@ -31,5 +31,14 @@ namespace Clipboard_Sharp.Properties {
                 return ((bool)(this["displayClipSaved"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ClipboardSharp")]
+        public string saveDirectory {
+            get {
+                return ((string)(this["saveDirectory"]));
+            }
+        }
     }
 }
