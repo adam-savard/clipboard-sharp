@@ -9,6 +9,10 @@ namespace Clipboard_Sharp.Classes
 {
 	public class ClipboardWriter
 	{
+		/// <summary>
+		/// Writes all text to a predefined storage format.
+		/// </summary>
+		/// <param name="content">Text for the file.</param>
 		public static void writeToFile(string content)
 		{
 			string file = DateTime.Now.ToString("hh-mm-ss-ffff") + ".txt";

@@ -16,8 +16,9 @@ namespace Clipboard_Sharp
 	{
 		private bool allowshowdisplay = false;
 		ClipboardDetect dt;
+		public static bool saveClips = true;
+		
 
-		static bool saveClips = true;
 
 		protected override void SetVisibleCore(bool value)
 		{
@@ -26,7 +27,16 @@ namespace Clipboard_Sharp
 		public frmClipboardSharp()
 		{
 			InitializeComponent();
-			dt = new ClipboardDetect();
+			dt = new ClipboardDetect(icoSysTray);
+
+			if (dt.getDisplay())
+			{
+				mnuClipSharp.Items[3].Text = "Disable Clip Notifications";
+			}
+			else
+			{
+				mnuClipSharp.Items[3].Text = "Enable Clip Notifications";
+			}
 		}
 
 		
@@ -44,11 +54,15 @@ namespace Clipboard_Sharp
 			{
 				saveClips = !saveClips;
 				dt.Stop();
+				mnuClipSharp.Items[1].Text = "Start Saving Clips";
+				dt.displayMessage("Stopped saving clips.");
 			}
 			else
 			{
+				dt.displayMessage("Started saving clips!");
 				saveClips = !saveClips;
-				dt = new ClipboardDetect();
+				mnuClipSharp.Items[1].Text = "Stop Saving Clips";
+				dt = new ClipboardDetect(icoSysTray);
 			}
 		}
 
@@ -64,6 +78,29 @@ namespace Clipboard_Sharp
 			{
 				dir.Delete(true);
 			}
+		}
+
+		private void icoSysTray_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+
+		}
+
+		private void disableClipNotificationsToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			if (dt.getDisplay())
+			{
+				Properties.Settings.Default["displayClipSaved"] = false;
+				dt.resetClipStatus();
+				mnuClipSharp.Items[3].Text = "Enable Clip Notifications";
+			}
+			else
+			{
+				Properties.Settings.Default["displayClipSaved"] = true;
+				dt.resetClipStatus();
+				mnuClipSharp.Items[3].Text = "Disable Clip Notifications";
+			}
+
+			
 		}
 	}
 }
