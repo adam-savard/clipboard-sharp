@@ -7,13 +7,18 @@
     <ProjectGuid>{31AE7179-9CE4-48A9-889E-631B7109C362}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Clipboard_Sharp</RootNamespace>
+<<<<<<< HEAD
     <AssemblyName>ClipboardSharp</AssemblyName>
+=======
+    <AssemblyName>Clipboard_Sharp</AssemblyName>
+>>>>>>> Add project files.
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+<<<<<<< HEAD
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>release\</PublishUrl>
+    <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,11 +29,13 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <TargetCulture>en-CA</TargetCulture>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>0.5.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+=======
+>>>>>>> Add project files.
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +56,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+<<<<<<< HEAD
   <PropertyGroup>
     <ApplicationIcon>icons8_copy_64_3hi_icon.ico</ApplicationIcon>
   </PropertyGroup>
@@ -64,6 +72,8 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+=======
+>>>>>>> Add project files.
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -100,7 +110,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <None Include="Clipboard_Sharp_TemporaryKey.pfx" />
+=======
+>>>>>>> Add project files.
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +127,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Content Include="icons8_copy_64_3hi_icon.ico" />
   </ItemGroup>
@@ -129,5 +143,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+=======
+>>>>>>> Add project files.
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -123,6 +123,8 @@ namespace Clipboard_Sharp.Classes
 			thread.SetApartmentState(ApartmentState.STA); //Set the thread to STA
 			thread.Start();
 			thread.Join();
+			//this is important. without this, the ram runs rampant.
+			thread.Abort();
 
 			
 		}
