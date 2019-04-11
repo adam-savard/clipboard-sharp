@@ -24,7 +24,7 @@ Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. 
 
 I've attempted to make installation of Clipboard# as simple as possible. On that note, the installer for the Alpha version is just the stock installer provided with Visual Studio. It is my hope to extend that to a custom installer (preferably a .msi) that will also support starting the application with Windows, security options if needed, etc.
 
-To install the latest stable version, check out the Install.zip file in the /release/ folder. Simply unzip, run setup.exe, and you're good to go. This setup support x86 and x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
+To install the latest stable version, check out the Install.zip file in the /release/ folder. Simply unzip, run setup.exe, and you're good to go. This setup supports x86 and x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
 
 If you have an issue with the install, I probably screwed something up along the way. Fire me an email (contact below) or submit a ticket, and I'll get to it as soon as I'm able.
 
