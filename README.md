@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+## Clipboard\# Makes Your Clipboard More Useful
 
-You can use the [editor on GitHub](https://github.com/adam-savard/clipboard-sharp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. If you've ever closed an old tab while coding, and don't remember the address or the code you wanted to copy again, this is for you.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Features
 
-### Markdown
+- Automatic saving of clipboard text to easily-searchable txt files
+- Polling at 200ms for up-to-the-second changes
+- Notification support of when text is copied, configurable by the user
+- Resides entirely in the notification tray; no cumbersome windows
+- Lightweight and accurate
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### TODO
+- Add support for user-specified directories
+- Add a custom settings page (not possible in the settings tray without a mess of menus)
+- Add search options for text
+- Add custom save format options (i.e. file names)
+- Add auto-delete option for custom date range
+- Add auto-archive to CSV for searching after auto-delete
+- Add stat counter for amount of text clipped, number of times clipped, etc.
+- Custom installer with start-with-windows support
 
-```markdown
-Syntax highlighted code block
+### Installation
 
-# Header 1
-## Header 2
-### Header 3
+I've attempted to make installation of Clipboard# as simple as possible. On that note, the installer for the Alpha version is just the stock installer provided with Visual Studio. It is my hope to extend that to a custom installer (preferably a .msi) that will also support starting the application with Windows, security options if needed, etc.
 
-- Bulleted
-- List
+To install the latest stable version, check out the Install.zip file in the /release/ folder. Simply unzip, run setup.exe, and you're good to go. This setup supports x86 and x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
 
-1. Numbered
-2. List
+If you have an issue with the install, I probably screwed something up along the way. Fire me an email (contact below) or submit a ticket, and I'll get to it as soon as I'm able.
 
-**Bold** and _Italic_ and `Code` text
+### FAQ
 
-[Link](url) and ![Image](src)
-```
+- Would you be able to implement feature xyz?
+ 
+Probably. I'm always open to suggestions, but I also don't want to bog down the app with a ton of features that make it use more ram than Chrome. If you have a feature request, submit it via email; I'll let you know if it'll make it in.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Hey, this code doesn't look very good, or you could do this in a different way...
 
-### Jekyll Themes
+Right now, I'm trying to get a MVP together. This isn't a coding competition, as you can see from what I've written. If I end up refactoring, I'll let you know, so we can cringe less together.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/adam-savard/clipboard-sharp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Is there a way I can help?
+
+Also probably. This is my baby, so I don't really need help coding it (after all, this is a product I'm making for myself as much as anyone else). But, if you want to send me money for coffee or something, I'd be into that. I'll provide some easy links to donate below.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you're having trouble with any of the application, or you just want to chat with a dev, feel free to drop me a line at:
+
+```markdown
+savardfs at gmail dot com
+
+```
+
+If you want to send me some money for coffee, or if you think this is a great application and you want to pay it forward, I definitely won't stop you. I've set up a patreon, where if you want to donate just once, go for it. I'll only charge you again if I feel that the latest feature is truly worth it (feature release means MAJOR version number changes, never minor. Think a complete code rebase).
+
+You can find that here:
+
+```markdown
+patreon.com/savardfs
+```
