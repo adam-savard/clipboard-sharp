@@ -35,9 +35,11 @@
 			this.saveToggle = new System.Windows.Forms.ToolStripMenuItem();
 			this.delOldClips = new System.Windows.Forms.ToolStripMenuItem();
 			this.disableClipNotificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.archiveDataToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.icoSysTray = new System.Windows.Forms.NotifyIcon(this.components);
-			this.archiveDataToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuClipSharp.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -46,13 +48,14 @@
 			this.mnuClipSharp.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.mnuClipSharp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showToolStripMenuItem,
+            this.advancedToolStripMenuItem,
             this.saveToggle,
             this.delOldClips,
             this.disableClipNotificationsToolStripMenuItem,
             this.archiveDataToExcelToolStripMenuItem,
             this.exitToolStripMenuItem1});
 			this.mnuClipSharp.Name = "mnuClipSharp";
-			this.mnuClipSharp.Size = new System.Drawing.Size(248, 176);
+			this.mnuClipSharp.Size = new System.Drawing.Size(248, 200);
 			// 
 			// showToolStripMenuItem
 			// 
@@ -82,6 +85,13 @@
 			this.disableClipNotificationsToolStripMenuItem.Text = "Disable Clip Notifications";
 			this.disableClipNotificationsToolStripMenuItem.Click += new System.EventHandler(this.disableClipNotificationsToolStripMenuItem_Click);
 			// 
+			// archiveDataToExcelToolStripMenuItem
+			// 
+			this.archiveDataToExcelToolStripMenuItem.Name = "archiveDataToExcelToolStripMenuItem";
+			this.archiveDataToExcelToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
+			this.archiveDataToExcelToolStripMenuItem.Text = "Archive Data to Excel";
+			this.archiveDataToExcelToolStripMenuItem.Click += new System.EventHandler(this.archiveDataToExcelToolStripMenuItem_Click);
+			// 
 			// exitToolStripMenuItem1
 			// 
 			this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
@@ -97,12 +107,20 @@
 			this.icoSysTray.Visible = true;
 			this.icoSysTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icoSysTray_MouseDoubleClick);
 			// 
-			// archiveDataToExcelToolStripMenuItem
+			// advancedToolStripMenuItem
 			// 
-			this.archiveDataToExcelToolStripMenuItem.Name = "archiveDataToExcelToolStripMenuItem";
-			this.archiveDataToExcelToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
-			this.archiveDataToExcelToolStripMenuItem.Text = "Archive Data to Excel";
-			this.archiveDataToExcelToolStripMenuItem.Click += new System.EventHandler(this.archiveDataToExcelToolStripMenuItem_Click);
+			this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.searchToolStripMenuItem});
+			this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
+			this.advancedToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
+			this.advancedToolStripMenuItem.Text = "Advanced";
+			// 
+			// searchToolStripMenuItem
+			// 
+			this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+			this.searchToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.searchToolStripMenuItem.Text = "Search";
+			this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
 			// 
 			// frmClipboardSharp
 			// 
@@ -129,6 +147,8 @@
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem disableClipNotificationsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem archiveDataToExcelToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
 	}
 }
 

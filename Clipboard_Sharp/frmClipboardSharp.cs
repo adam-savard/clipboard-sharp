@@ -114,5 +114,10 @@ namespace Clipboard_Sharp
 		{
 			dt.archive();
 		}
+
+		private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new frmSearchFiles();
+		}
 	}
 }
