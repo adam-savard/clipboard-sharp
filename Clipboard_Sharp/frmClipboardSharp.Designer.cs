@@ -55,7 +55,7 @@
             this.archiveDataToExcelToolStripMenuItem,
             this.exitToolStripMenuItem1});
 			this.mnuClipSharp.Name = "mnuClipSharp";
-			this.mnuClipSharp.Size = new System.Drawing.Size(248, 200);
+			this.mnuClipSharp.Size = new System.Drawing.Size(248, 172);
 			// 
 			// showToolStripMenuItem
 			// 
@@ -132,6 +132,7 @@
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Clipboard#";
+			this.Load += new System.EventHandler(this.frmClipboardSharp_Load);
 			this.mnuClipSharp.ResumeLayout(false);
 			this.ResumeLayout(false);
 

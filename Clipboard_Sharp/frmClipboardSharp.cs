@@ -32,11 +32,11 @@ namespace Clipboard_Sharp
 
 			if (dt.getDisplay())
 			{
-				mnuClipSharp.Items[3].Text = "Disable Clip Notifications";
+				mnuClipSharp.Items[4].Text = "Disable Clip Notifications";
 			}
 			else
 			{
-				mnuClipSharp.Items[3].Text = "Enable Clip Notifications";
+				mnuClipSharp.Items[4].Text = "Enable Clip Notifications";
 			}
 		}
 
@@ -92,13 +92,13 @@ namespace Clipboard_Sharp
 			{
 				Properties.Settings.Default["displayClipSaved"] = false;
 				dt.resetClipStatus();
-				mnuClipSharp.Items[3].Text = "Enable Clip Notifications";
+				mnuClipSharp.Items[4].Text = "Enable Clip Notifications";
 			}
 			else
 			{
 				Properties.Settings.Default["displayClipSaved"] = true;
 				dt.resetClipStatus();
-				mnuClipSharp.Items[3].Text = "Disable Clip Notifications";
+				mnuClipSharp.Items[4].Text = "Disable Clip Notifications";
 			}
 
 			
@@ -118,6 +118,11 @@ namespace Clipboard_Sharp
 		private void searchToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			new frmSearchFiles();
+		}
+
+		private void frmClipboardSharp_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

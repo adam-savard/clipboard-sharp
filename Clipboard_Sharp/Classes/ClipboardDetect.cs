@@ -63,6 +63,9 @@ namespace Clipboard_Sharp.Classes
 			return DisplayCopied;
 		}
 
+		/// <summary>
+		/// Resets the clip notification status.
+		/// </summary>
 		public void resetClipStatus()
 		{
 			displayCopied = Convert.ToBoolean(Properties.Settings.Default["displayClipSaved"]);
@@ -132,6 +135,8 @@ namespace Clipboard_Sharp.Classes
 		public void archive()
 		{
 			ClipboardWriter.archiveData();
+			icon.BalloonTipText = "Saved to Excel file!";
+			icon.ShowBalloonTip(2000);
 		}
 
 	}

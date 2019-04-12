@@ -46,6 +46,11 @@ namespace Clipboard_Sharp
 				
 			}
 
+			if(files.Count < 1)
+			{
+				files.Add("null", "Nothing!");
+			}
+
 			lstFiles.DataSource = new BindingSource(files, null);
 			lstFiles.DisplayMember = "Value";
 			lstFiles.ValueMember = "Key";
@@ -53,7 +58,15 @@ namespace Clipboard_Sharp
 
 		private void btnOpen_Click(object sender, EventArgs e)
 		{
-			Process.Start(lstFiles.SelectedValue.ToString());
+			try
+			{
+				Process.Start(lstFiles.SelectedValue.ToString());
+			}
+			catch(System.ComponentModel.Win32Exception ex)
+			{
+				MessageBox.Show("There's are no files with that search term!");
+			}
+			
 		}
 	}
 }
