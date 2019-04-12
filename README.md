@@ -18,13 +18,13 @@ Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. 
 - Add auto-delete option for custom date range
 - Add auto-archive to CSV for searching after auto-delete
 - Add stat counter for amount of text clipped, number of times clipped, etc.
-- Custom installer with start-with-windows support
+- ~~Custom installer~~ with start-with-windows support
 
 ### Installation
 
-I've attempted to make installation of Clipboard# as simple as possible. On that note, the installer for the Alpha version is just the stock installer provided with Visual Studio. It is my hope to extend that to a custom installer (preferably a .msi) that will also support starting the application with Windows, security options if needed, etc.
+I've attempted to make installation of Clipboard# as simple as possible. 
 
-To install the latest stable version, check out the [Install.zip](https://github.com/adam-savard/clipboard-sharp/blob/master/Install.zip) file in the main folder. Simply unzip, run setup.exe, and you're good to go. This setup supports x86 and x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
+To install the latest stable version, check out the [setup.exe](https://github.com/adam-savard/clipboard-sharp/blob/master/Clipboard_Sharp/setup.exe) file. Simply run and you're good to go. This setup supports x86 and is compatible with x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
 
 If you have an issue with the install, I probably screwed something up along the way. Fire me an email (contact below) or submit a ticket, and I'll get to it as soon as I'm able.
 
@@ -48,7 +48,6 @@ If you're having trouble with any of the application, or you just want to chat w
 
 ```markdown
 savardfs at gmail dot com
-
 ```
 
 If you want to send me some money for coffee, or if you think this is a great application and you want to pay it forward, I definitely won't stop you. I've set up a patreon, where if you want to donate just once, go for it. I'll only charge you again if I feel that the latest feature is truly worth it (feature release means MAJOR version number changes, never minor. Think a complete code rebase).
