@@ -34,9 +34,9 @@
 			this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToggle = new System.Windows.Forms.ToolStripMenuItem();
 			this.delOldClips = new System.Windows.Forms.ToolStripMenuItem();
+			this.disableClipNotificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.icoSysTray = new System.Windows.Forms.NotifyIcon(this.components);
-			this.disableClipNotificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuClipSharp.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -50,7 +50,7 @@
             this.disableClipNotificationsToolStripMenuItem,
             this.exitToolStripMenuItem1});
 			this.mnuClipSharp.Name = "mnuClipSharp";
-			this.mnuClipSharp.Size = new System.Drawing.Size(248, 152);
+			this.mnuClipSharp.Size = new System.Drawing.Size(248, 124);
 			// 
 			// showToolStripMenuItem
 			// 
@@ -73,6 +73,13 @@
 			this.delOldClips.Text = "Delete Old Clips";
 			this.delOldClips.Click += new System.EventHandler(this.delOldClips_Click);
 			// 
+			// disableClipNotificationsToolStripMenuItem
+			// 
+			this.disableClipNotificationsToolStripMenuItem.Name = "disableClipNotificationsToolStripMenuItem";
+			this.disableClipNotificationsToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
+			this.disableClipNotificationsToolStripMenuItem.Text = "Disable Clip Notifications";
+			this.disableClipNotificationsToolStripMenuItem.Click += new System.EventHandler(this.disableClipNotificationsToolStripMenuItem_Click);
+			// 
 			// exitToolStripMenuItem1
 			// 
 			this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
@@ -88,22 +95,16 @@
 			this.icoSysTray.Visible = true;
 			this.icoSysTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icoSysTray_MouseDoubleClick);
 			// 
-			// disableClipNotificationsToolStripMenuItem
-			// 
-			this.disableClipNotificationsToolStripMenuItem.Name = "disableClipNotificationsToolStripMenuItem";
-			this.disableClipNotificationsToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
-			this.disableClipNotificationsToolStripMenuItem.Text = "Disable Clip Notifications";
-			this.disableClipNotificationsToolStripMenuItem.Click += new System.EventHandler(this.disableClipNotificationsToolStripMenuItem_Click);
-			// 
 			// frmClipboardSharp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmClipboardSharp";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Form1";
+			this.Text = "Clipboard#";
 			this.mnuClipSharp.ResumeLayout(false);
 			this.ResumeLayout(false);
 
