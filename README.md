@@ -16,7 +16,7 @@ Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. 
 - Add search options for text
 - Add custom save format options (i.e. file names)
 - Add auto-delete option for custom date range
-- Add auto-archive to CSV for searching after auto-delete
+- ~~Add auto-archive to CSV for searching after auto-delete~~
 - Add stat counter for amount of text clipped, number of times clipped, etc.
 - ~~Custom installer~~ with start-with-windows support
 
@@ -24,7 +24,7 @@ Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. 
 
 I've attempted to make installation of Clipboard# as simple as possible. 
 
-To install the latest stable version, check out the [setup.exe](https://github.com/adam-savard/clipboard-sharp/blob/master/Clipboard_Sharp/setup.exe) file. Simply run and you're good to go. This setup supports x86 and is compatible with x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
+To install the latest stable version, check out the [releases section](https://github.com/adam-savard/clipboard-sharp/releases) and download the newest MSI. Simply run and you're good to go. This setup supports x86 and is compatible with x86-64, with hoped support for ARM in the future (no devices to test with, so I am not comfortable releasing it for those platforms).
 
 If you have an issue with the install, I probably screwed something up along the way. Fire me an email (contact below) or submit a ticket, and I'll get to it as soon as I'm able.
 
