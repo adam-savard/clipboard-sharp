@@ -129,5 +129,10 @@ namespace Clipboard_Sharp.Classes
 			
 		}
 
+		public void archive()
+		{
+			ClipboardWriter.archiveData();
+		}
+
 	}
 }

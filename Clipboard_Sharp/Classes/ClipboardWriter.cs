@@ -9,6 +9,9 @@ namespace Clipboard_Sharp.Classes
 {
 	public class ClipboardWriter
 	{
+		static string folder = DateTime.Now.ToString("yyyy-MM-dd");
+		static string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ClipboardSharp", folder);
+
 		/// <summary>
 		/// Writes all text to a predefined storage format.
 		/// </summary>
@@ -16,9 +19,9 @@ namespace Clipboard_Sharp.Classes
 		public static void writeToFile(string content)
 		{
 			string file = DateTime.Now.ToString("hh-mm-ss-ffff") + ".txt";
-			string folder = DateTime.Now.ToString("yyyy-MM-dd");
-
-			string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments),"ClipboardSharp",folder);
+			folder = DateTime.Now.ToString("yyyy-MM-dd");
+			
+		
 
 			if (!Directory.Exists(path))
 			{
@@ -27,6 +30,12 @@ namespace Clipboard_Sharp.Classes
 
 			File.WriteAllText(System.IO.Path.Combine(path, file), content);
 			
+		}
+
+		public static void archiveData()
+		{
+			path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ClipboardSharp", folder);
+			FileManipulation.writeToXL(path);
 		}
 	}
 }

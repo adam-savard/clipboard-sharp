@@ -37,6 +37,7 @@
 			this.disableClipNotificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.icoSysTray = new System.Windows.Forms.NotifyIcon(this.components);
+			this.archiveDataToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuClipSharp.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -48,9 +49,10 @@
             this.saveToggle,
             this.delOldClips,
             this.disableClipNotificationsToolStripMenuItem,
+            this.archiveDataToExcelToolStripMenuItem,
             this.exitToolStripMenuItem1});
 			this.mnuClipSharp.Name = "mnuClipSharp";
-			this.mnuClipSharp.Size = new System.Drawing.Size(248, 124);
+			this.mnuClipSharp.Size = new System.Drawing.Size(248, 176);
 			// 
 			// showToolStripMenuItem
 			// 
@@ -95,6 +97,13 @@
 			this.icoSysTray.Visible = true;
 			this.icoSysTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icoSysTray_MouseDoubleClick);
 			// 
+			// archiveDataToExcelToolStripMenuItem
+			// 
+			this.archiveDataToExcelToolStripMenuItem.Name = "archiveDataToExcelToolStripMenuItem";
+			this.archiveDataToExcelToolStripMenuItem.Size = new System.Drawing.Size(247, 24);
+			this.archiveDataToExcelToolStripMenuItem.Text = "Archive Data to Excel";
+			this.archiveDataToExcelToolStripMenuItem.Click += new System.EventHandler(this.archiveDataToExcelToolStripMenuItem_Click);
+			// 
 			// frmClipboardSharp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -119,6 +128,7 @@
 		private System.Windows.Forms.ToolStripMenuItem delOldClips;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem disableClipNotificationsToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem archiveDataToExcelToolStripMenuItem;
 	}
 }
 

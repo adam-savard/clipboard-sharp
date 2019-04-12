@@ -109,5 +109,10 @@ namespace Clipboard_Sharp
 			string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDoc‌​uments), "ClipboardSharp");
 			Process.Start(path);
 		}
+
+		private void archiveDataToExcelToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			dt.archive();
+		}
 	}
 }
