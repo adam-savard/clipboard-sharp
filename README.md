@@ -13,7 +13,7 @@ Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. 
 ### TODO
 - Add support for user-specified directories
 - Add a custom settings page (not possible in the settings tray without a mess of menus)
-- Add search options for text
+- ~~Add search options for text~~
 - Add custom save format options (i.e. file names)
 - Add auto-delete option for custom date range
 - ~~Add auto-archive to CSV for searching after auto-delete~~
