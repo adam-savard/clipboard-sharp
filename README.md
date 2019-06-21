@@ -50,10 +50,4 @@ If you're having trouble with any of the application, or you just want to chat w
 savardfs at gmail dot com
 ```
 
-If you want to send me some money for coffee, or if you think this is a great application and you want to pay it forward, I definitely won't stop you. I've set up a patreon, where if you want to donate just once, go for it. I'll only charge you again if I feel that the latest feature is truly worth it (feature release means MAJOR version number changes, never minor. Think a complete code rebase).
 
-You can find that here:
-
-```markdown
-patreon.com/savardfs
-```
