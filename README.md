@@ -40,7 +40,7 @@ Right now, I'm trying to get a MVP together. This isn't a coding competition, as
 
 - Is there a way I can help?
 
-Also probably. This is my baby, so I don't really need help coding it (after all, this is a product I'm making for myself as much as anyone else). But, if you want to send me money for coffee or something, I'd be into that. I'll provide some easy links to donate below.
+Submit issues, and let me know if there's something you like about the software.
 
 ### Support or Contact
 
