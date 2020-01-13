@@ -1,3 +1,5 @@
+# THIS PROJECT WILL NO LONGER BE UPDATED. I HAVE SWITCHED TO LINUX.
+
 ## Clipboard\# Makes Your Clipboard More Useful
 
 Clipboard\# aims to extend the functionality of the built-in Windows Clipboard. If you've ever closed an old tab while coding, and don't remember the address or the code you wanted to copy again, this is for you.
